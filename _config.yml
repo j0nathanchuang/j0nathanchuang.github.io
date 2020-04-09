@@ -1,6 +1,0 @@
-#Jekyll configuration
-name: Jonathan Chuang
-description: A website all about me
-url: "https://j0nathanchuang.github.io"
-markdown: kramdown
-theme: jekyll-theme-cayman
