@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/48df7507-99bb-4b03-bda8-879f6e8f1dbf/deploy-status)](https://app.netlify.com/sites/jonathanchuang/deploys)
 
-#Website all about me!
+Website all about me!
 
 Read Only by HTML5 UP
 html5up.net | @ajlkn
