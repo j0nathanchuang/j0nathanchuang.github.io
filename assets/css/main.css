@@ -2248,7 +2248,9 @@ input, select, textarea {
 
 		.image.avatar {
 			border-radius: 100%;
-			overflow: hidden;
+			margin-left: left;
+			margin-right: auto;
+			/*overflow: hidden;*/
 		}
 
 			.image.avatar img {
@@ -2800,8 +2802,8 @@ input, select, textarea {
 
 			#header > header .avatar {
 				display: block;
-				margin: 0 auto 2.25em auto;
-				width: 8em;
+				margin: 0 auto 2em auto;
+				width: 18em;
 			}
 
 			#header > header h1 {
