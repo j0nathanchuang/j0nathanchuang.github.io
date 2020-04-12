@@ -56,11 +56,11 @@ span {
 	transition: 0.3s;*/
 	background-color: inherit;
  	float: left;
-	text-align: left;
+	text-align: center;
 	border: none;
   outline: none;
  	cursor: pointer;
-	padding: 1px 10px;
+	padding: 0px 9.3px;
 	transition: 0.3s;
 }
 
@@ -80,7 +80,7 @@ span {
   border: 1px solid #ffffff;
   width: 100%;
   border-left: none;
-  height: 900px;
+  height: 1500px;
 	display: none;
 }
 
