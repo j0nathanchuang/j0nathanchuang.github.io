@@ -25,9 +25,15 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-span {
+/*span {
 	 font-size: 65%;
+}*/
+.miniSpan {
+	font-size: 65%;
 }
+
+/*Style for my read more button*/
+.more {display: none;}
 
 /*tab from w3schools*/
 /* Style the tab */
@@ -80,7 +86,7 @@ span {
   border: 1px solid #ffffff;
   width: 100%;
   border-left: none;
-  height: 1500px;
+  height: 2000px;
 	display: none;
 }
 

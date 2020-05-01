@@ -4,6 +4,40 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+//Click to read more/read less
+function readMore(secNum) {
+  var dots = document.getElementById("dots" + secNum);
+  var moreText = document.getElementById("more" + secNum);
+  var btnText = document.getElementById("myBtn" + secNum);
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+function readMoreOne() {
+  var dots = document.getElementById("dot");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("Btn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+//Create different tabs
 function openCity(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
