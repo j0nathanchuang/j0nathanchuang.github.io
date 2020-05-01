@@ -26,7 +26,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;}
 
 /*span {
-	 font-size: 65%;
+	 font-size: 100%;
 }*/
 .miniSpan {
 	font-size: 65%;
@@ -2254,15 +2254,17 @@ input, select, textarea {
 
 		.image.avatar {
 			border-radius: 100%;
-			margin-left: left;
-			margin-right: auto;
+			margin-left: auto;
+			margin-right: right;
+			width: 100%;
 			/*overflow: hidden;*/
 		}
 
 			.image.avatar img {
 				border-radius: 100%;
 				display: block;
-				width: 100%;
+				margin-left: 34px;
+				width: 69%;
 			}
 
 		.image.main {
