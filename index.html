@@ -31,6 +31,11 @@
 				</header>
 				<nav id="nav">
 					<ul>
+						<label class="switch switch-flat">
+							<input class="switch-input" type="checkbox" />
+							<span class="switch-label" data-on="Lights On" data-off="Lights Off"></span>
+							<span class="switch-handle"></span>
+						</label>
 						<li><a href="#AboutMe" class="active">About Me</a></li>
 						<li><a href="#Skills">Skills</a></li>
 						<li><a href="#Experience">Experience</a></li>
@@ -55,7 +60,6 @@
 
 				<!-- Main -->
 					<div id="main">
-
 						<!-- One -->
 							<section id="AboutMe">
 								<div class="image main" data-position="center">
@@ -163,18 +167,8 @@
 									What I liked/disliked
 									how to make a mini page with tabs √
 									-->
-									<div class="tab">
-									  <button class="tablinks" onclick="openCity(event, 'Fall 2018')"><h3>Fall '18</h3></button>
-									  <button class="tablinks" onclick="openCity(event, 'Winter 2019')"><h3>Winter '19</h3></button>
-									  <button class="tablinks" onclick="openCity(event, 'Fall 2019')"><h3>Fall '19</h3></button>
-										<button class="tablinks" onclick="openCity(event, 'Winter 2020')"><h3>Winter '20</h3></button>
-										<button class="tablinks" onclick="openCity(event, 'Fall 2020')"><h3>Fall '20</h3></button>
-							    	<button class="tablinks" onclick="openCity(event, 'Winter 2021')"><h3>Winter '21</h3></button>
-										<button class="tablinks" onclick="openCity(event, 'Fall 2021')"><h3>Fall '21</h3></button>
-										<button class="tablinks" onclick="openCity(event, 'Winter 2022')"><h3>Winter '22</h3></button>
-									</div>
-
-									<div id="Fall 2018" class="tabcontent">
+									<button class="accordion">Fall 2018</button>
+									<div class="panel">
 										<h5><a href="https://atlas.ai.umich.edu/course/EECS%20183/" class="button alt">EECS 183</a> - Elementary Programming Concepts</h5>
 										<p> Credits: 4</br>
 										 Everyone should absolutely take this class. This course was my first exposure to coding and also, it was the course
@@ -225,8 +219,8 @@
 												</span><button class="button primary" onclick="readMore(4)" id="myBtn4">Read more</button></br></br>
 												Recommendation: 8/10</p>
 									</div>
-
-									<div id="Winter 2019" class="tabcontent">
+									<button class="accordion">Winter 2019</button>
+									<div class="panel">
 										<h5><a href="https://atlas.ai.umich.edu/course/EECS%20280/" class="button alt">EECS 280</a> - Programming and Introductory Data Structures</h5>
 										<p> Credits: 4</br>
 												This course dives much deeper into C++ by exploring new data structures, like vectors & classes, and basic tools for writing code, such as
@@ -256,8 +250,8 @@
 												always cool to know what's going on in your brain.</br></br>
 												Recommendation: 10/10</p>
 									</div>
-
-									<div id="Fall 2019" class="tabcontent">
+									<button class="accordion">Fall 2019</button>
+									<div class="panel">
 										<h5><a href="https://atlas.ai.umich.edu/course/EECS%20281/" class="button alt">EECS 281</a> - Data Structures and Algorithms</h5>
 										<p> Credits: 4</br>
 											The rumors are true - this is a hard course. Easily the hardest course I had taken up to this point, but also
@@ -309,8 +303,8 @@
 												</span><button class="button primary" onclick="readMore(10)" id="myBtn10">Read more</button></br></br>
 											Recommendation: 8/10</p>
 									</div>
-
-									<div id="Winter 2020" class="tabcontent">
+									<button class="accordion">Winter 2020</button>
+									<div class="panel">
 										<h5><a href="https://atlas.ai.umich.edu/course/EECS%20370/" class="button alt">EECS 370</a> - Introduction to Computer Organization</h5>
 										<p> Credits: 4</br>
 												This course focuses on computer architecture. This is an important course for all computer scientists because it taught me
@@ -366,7 +360,8 @@
 												it's a real thing. </span><button class="button primary" onclick="readMore(15)" id="myBtn15">Read more</button></br></br>
 												Recommendation: 7/10</p>
 									</div>
-									<div id="Fall 2020" class="tabcontent">
+									<button class="accordion">Fall 2020</button>
+									<div class="panel">
 										<h5><a href="https://atlas.ai.umich.edu/course/EECS%20485/" class="button alt">EECS 485</a> - Web Systems</h5>
 										<!--p>CHANGE to Credits: 4</br>
 												TODO</br></br-->
@@ -390,61 +385,15 @@
 										<!--h6> TODO </h6>
 										<p> Recommendation: 8/10</p-->
 									</div>
-						<!--
-									<div id="Winter 2021" class="tabcontent">
-										<h5><a href="https://atlas.ai.umich.edu/course/EECS%20183/" class="button alt">EECS 183</a> - Elementary Programming Concepts </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 10/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/STATS%20280/" class="button alt">STATS 280</a> - Honors Introduction to Statistics and Data Analysis </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 6/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/ENGLISH%20125/" class="button alt">ENGLISH 125</a> - Speaking Math </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 8/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/SPANISH%20277/" class="button alt">SPANISH 277</a> - Spanish Grammar and Composition </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 10/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/ALA%20170/" class="button alt">ALA 170</a> - BLI Leadership Lab </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 8/10</p>
+									<button class="accordion">Winter 2021</button>
+									<div class="panel">
 									</div>
-									<div id="Fall 2021" class="tabcontent">
-										<h5><a href="https://atlas.ai.umich.edu/course/EECS%20183/" class="button alt">EECS 183</a> - Elementary Programming Concepts </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 10/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/STATS%20280/" class="button alt">STATS 280</a> - Honors Introduction to Statistics and Data Analysis </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 6/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/ENGLISH%20125/" class="button alt">ENGLISH 125</a> - Speaking Math </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 8/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/SPANISH%20277/" class="button alt">SPANISH 277</a> - Spanish Grammar and Composition </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 10/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/ALA%20170/" class="button alt">ALA 170</a> - BLI Leadership Lab </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 8/10</p>
+									<button class="accordion">Fall 2021</button>
+									<div class="panel">
 									</div>
-
-									<div id="Winter 2022" class="tabcontent">
-										<h5><a href="https://atlas.ai.umich.edu/course/EECS%20183/" class="button alt">EECS 183</a> - Elementary Programming Concepts </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 10/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/STATS%20280/" class="button alt">STATS 280</a> - Honors Introduction to Statistics and Data Analysis </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 6/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/ENGLISH%20125/" class="button alt">ENGLISH 125</a> - Speaking Math </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 8/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/SPANISH%20277/" class="button alt">SPANISH 277</a> - Spanish Grammar and Composition </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 10/10</p>
-										<h5><a href="https://atlas.ai.umich.edu/course/ALA%20170/" class="button alt">ALA 170</a> - BLI Leadership Lab </h5>
-										<h6> TODO </h6>
-										<p> Recommendation: 8/10</p>
+									<button class="accordion">Winter 2022</button>
+									<div class="panel">
 									</div>
-								-->
-								</div>
 							</section>
 
 						<!-- Four -->

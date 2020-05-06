@@ -25,9 +25,147 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
-/*span {
-	 font-size: 100%;
-}*/
+/*Switch class*/
+.switch {
+	position: relative;
+	display: block;
+	vertical-align: top;
+	width: 100px;
+	height: 30px;
+	padding: 3px;
+	/*margin: 0 0 10px 0;*/
+	margin-left: auto;
+	margin-right: auto;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+	border-radius: 18px;
+	box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	box-sizing:content-box;
+}
+.switch-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	box-sizing:content-box;
+}
+.switch-label {
+	position: relative;
+	display: block;
+	height: inherit;
+	font-size: 10px;
+	text-transform: uppercase;
+	background: #eceeef;
+	border-radius: inherit;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+	box-sizing:content-box;
+}
+.switch-label:before, .switch-label:after {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
+	box-sizing:content-box;
+}
+.switch-label:before {
+	content: attr(data-off);
+	right: 11px;
+	color: #aaaaaa;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+.switch-label:after {
+	content: attr(data-on);
+	left: 11px;
+	color: #FFFFFF;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+}
+.switch-input:checked ~ .switch-label {
+	background: #E1B42B;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.switch-input:checked ~ .switch-label:before {
+	opacity: 0;
+}
+.switch-input:checked ~ .switch-label:after {
+	opacity: 1;
+}
+.switch-handle {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 28px;
+	height: 28px;
+	background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+	border-radius: 100%;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.switch-handle:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -6px;
+	width: 12px;
+	height: 12px;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+	border-radius: 6px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+.switch-input:checked ~ .switch-handle {
+	left: 74px;
+	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.switch-flat {
+	padding: 0;
+	background: #FFF;
+	background-image: none;
+}
+.switch-flat .switch-label {
+	background: #FFF;
+	border: solid 2px #eceeef;
+	box-shadow: none;
+}
+.switch-flat .switch-label:after {
+	color: #ca684a;
+}
+.switch-flat .switch-handle {
+	top: 6px;
+	left: 6px;
+	background: #dadada;
+	width: 22px;
+	height: 22px;
+	box-shadow: none;
+}
+.switch-flat .switch-handle:before {
+	background: #eceeef;
+}
+.switch-flat .switch-input:checked ~ .switch-label {
+	background: #FFF;
+	border-color: #ca684a;
+}
+.switch-flat .switch-input:checked ~ .switch-handle {
+	left: 72px;
+	background: #ca684a;
+	box-shadow: none;
+}
+/* Transition
+========================== */
+.switch-label, .switch-handle {
+	transition: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+}
+/*End switch class*/
+
 .miniSpan {
 	font-size: 65%;
 }
@@ -44,8 +182,9 @@ section, summary, time, mark, audio, video {
   height: 1000px;
 	height: 100% !important;*/
   overflow: hidden;
-  border: 1px solid #ffffff;
-  background-color: #f1f1f1;
+  /*border: 1px solid #ffffff;*/
+	border: none;
+  background-color: #f6f6f6;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -57,16 +196,17 @@ section, summary, time, mark, audio, video {
   width: 100%;
   border: none;
   outline: none;
-
+	position: relative;
   cursor: pointer;
+	text-align: relative;
 	transition: 0.3s;*/
 	background-color: inherit;
  	float: left;
-	text-align: center;
 	border: none;
   outline: none;
  	cursor: pointer;
-	padding: 0px 9.3px;
+	margin-left: auto;
+	margin-right: auto;
 	transition: 0.3s;
 }
 
@@ -78,7 +218,7 @@ section, summary, time, mark, audio, video {
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: #90f0d4;
+  background-color: #85dbc4;
 	isolation: isolate;
 }
 
@@ -86,10 +226,45 @@ section, summary, time, mark, audio, video {
 .tabcontent {
   padding: 1px 3px;
   border: 1px solid #ffffff;
-  width: 100%;
   border-left: none;
   height: relative;
 	display: none;
+}
+
+/*Accordion class*/
+/*Style the buttons used to open and close the panels*/
+.accordion {
+  background-color: #eee;
+  color: #777;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+	font-weight: 700;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+/*+ sign*/
+.accordion:after {
+ float: right;
+ content: "\002B"
+ }
+ /*Changes + to -*/
+.active:after {
+  content: "\2212";
+}
+/*Hides information by default*/
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
 
 article, aside, details, figcaption, figure,
@@ -2260,18 +2435,23 @@ input, select, textarea {
 			}
 
 		.image.avatar {
-			border-radius: 100%;
+			/*border-radius: 100%;
 			margin-left: auto;
 			margin-right: right;
 			width: 100%;
-			/*overflow: hidden;*/
+			overflow: hidden; */
+			border-radius: 100%;
+			overflow: hidden;
 		}
 
 			.image.avatar img {
-				border-radius: 100%;
+				/*border-radius: 100%;
 				display: block;
 				margin-left: 34px;
-				width: 69%;
+				width: 69%;*/
+				border-radius: 100%;
+				display: block;
+				width: 100%;
 			}
 
 		.image.main {
@@ -2823,8 +3003,8 @@ input, select, textarea {
 
 			#header > header .avatar {
 				display: block;
-				margin: 0 auto 2em auto;
-				width: 18em;
+				margin: 0 auto 1em auto;
+				width: 12em;
 			}
 
 			#header > header h1 {
