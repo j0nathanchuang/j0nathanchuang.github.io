@@ -247,7 +247,7 @@ section, summary, time, mark, audio, video {
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.accordion.active, .accordion:hover {
   background-color: #ccc;
 }
 /*+ sign*/
@@ -256,7 +256,7 @@ section, summary, time, mark, audio, video {
  content: "\002B"
  }
  /*Changes + to -*/
-.active:after {
+.accordion.active:after {
   content: "\2212";
 }
 /*Hides information by default*/
