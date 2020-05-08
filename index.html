@@ -11,6 +11,7 @@
 <html>
 	<head>
 		<meta name="title" content="Jonathan Chuang - A Website All About Me!" />
+		<meta name="google-site-verification" content="dxifpzV7nwCnk_wZVcCedBdwt2p6P7oxMG6i-W6WtpI" />
 		<title>Jonathan Chuang</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -21,12 +22,23 @@
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 		<link rel="manifest" href="favicon_io/site.webmanifest">
+		<style type="text/css">
+		  .mobileShow {display: none;}
+
+		  /* Smartphone Portrait and Landscape */
+		  @media only screen
+		    and (min-device-width : 320px)
+		    and (max-device-width : 480px){
+		      .mobileShow {display: inline;}
+		  }
+		</style>
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<section id="header">
 				<header>
+					<link rel="canonical" href="https://jonathanchuang.me/index.html"/>
 					<span class="image avatar"><img src="images/selfie.jpg" alt="" /></span>
 					<meta name="h1" content="Jonathan Chuang - A Website All About Me!" />
 					<h1 id="logo"><a href="#">Jonathan Chuang</a></h1>
@@ -35,11 +47,13 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<label class="switch switch-flat">
-							<input class="switch-input" type="checkbox" />
-							<span class="switch-label" data-on="Lights On" data-off="Lights Off"></span>
-							<span class="switch-handle"></span>
-						</label>
+						<div class="mobileShow">
+							<label class="switch switch-flat">
+								<input class="switch-input" type="checkbox"/>
+								<span class="switch-label" data-on="Lights On" data-off="Lights Off"></span>
+								<span class="switch-handle"></span>
+							</label>
+						</div>
 						<li><a href="#AboutMe" class="active">About Me</a></li>
 						<li><a href="#Skills">Skills</a></li>
 						<li><a href="#Experience">Experience</a></li>
@@ -227,9 +241,9 @@
 									<div class="panel">
 										<h5><a href="https://atlas.ai.umich.edu/course/EECS%20280/" class="button alt">EECS 280</a> - Programming and Introductory Data Structures</h5>
 										<p> Credits: 4</br>
-												This course dives much deeper into C++ by exploring new data structures, like vectors & classes, and basic tools for writing code, such as
-												separating files into .cpp and .h files and <span id="dots5">...</span><span class="more" id="more5">
-												overloading operators to simplify your code. This is the course with the notoriously
+												This course dives much deeper into C++ by exploring new data structures, like vectors & classes, basic knowledge for writing code, such as
+												the four pillars of object-oriented programming and <span id="dots5">...</span><span class="more" id="more5">
+												simply tools to write code efficiently, like overloading operators to simplify your code. This is the course with the notoriously
 												hard project that simulates a game of Euchre, however, it's a very rewarding course each time you finish a project. Since most
 											 	projects in this class was partner-based, it also strengthen my ability to collaborate with another computer scientist in-person
 												and through Github. </span><button class="button primary" onclick="readMore(5)" id="myBtn5">Read more</button></br></br>

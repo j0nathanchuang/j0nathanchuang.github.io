@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 /*Switch class*/
 .switch {
@@ -134,7 +135,7 @@ section, summary, time, mark, audio, video {
 	box-shadow: none;
 }
 .switch-flat .switch-label:after {
-	color: #ca684a;
+	color: #4acaa8;
 }
 .switch-flat .switch-handle {
 	top: 6px;
@@ -149,11 +150,11 @@ section, summary, time, mark, audio, video {
 }
 .switch-flat .switch-input:checked ~ .switch-label {
 	background: #FFF;
-	border-color: #ca684a;
+	border-color: #4acaa8;
 }
 .switch-flat .switch-input:checked ~ .switch-handle {
 	left: 72px;
-	background: #ca684a;
+	background: #4acaa8;
 	box-shadow: none;
 }
 /* Transition
@@ -269,7 +270,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+}
 
 body {
 	line-height: 1;
@@ -3112,6 +3114,7 @@ input, select, textarea {
 			line-height: 1em;
 			list-style: none;
 			padding: 0;
+			isolation: isolate;
 		}
 
 			#footer .copyright li {
@@ -3575,4 +3578,8 @@ input, select, textarea {
 				padding: 0;
 			}
 
+	}
+
+	.dark-mode * {
+		background-color: #313131;
 	}
