@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: /assets/ /favicon_io/ /images/ 
+Disallow: /images
+Disallow: /assets
+Disallow: /favicon_io
+Disallow: /index.html
