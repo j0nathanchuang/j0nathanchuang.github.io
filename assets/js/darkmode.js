@@ -8,7 +8,7 @@ var options = {
   buttonColorDark: '#17153f',  // default: '#100f2c'
   buttonColorLight: '#d9d9d9', // default: '#fff'
   saveInCookies: false, // default: true,
-  label: '🌗', // default: ''🌓
+  label: '🌗', // default: ''🌓 
   autoMatchOsTheme: true // default: true
 }
 

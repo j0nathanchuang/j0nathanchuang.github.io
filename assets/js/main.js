@@ -44,7 +44,6 @@ function openCity(evt, cityName) {
 }
 
 (function($) {
-
   //Create different panels
   var acc = document.getElementsByClassName("accordion");
   var i;
