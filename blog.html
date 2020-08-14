@@ -28,14 +28,18 @@
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 		<link rel="manifest" href="favicon_io/site.webmanifest">
 		<style type="text/css">
-		  .mobileShow {display: none;}
+			@media only screen and (min-device-width : 320px)	and (max-device-width : 480px){
+				.mobile-image {
+					max-width: 250px;
+				}
+			}
+		  /* .mobileShow {display: none;}
 
-		  /* Smartphone Portrait and Landscape */
 		  @media only screen
 		    and (min-device-width : 320px)
 		    and (max-device-width : 480px){
 		      .mobileShow {display: inline;}
-		  }
+		  } */
 		</style>
 	</head>
 	<body class="is-preload">
@@ -52,13 +56,13 @@
 				</header>
 				<nav id="nav">
 					<ul>
-						<div class="mobileShow">
+						<!--div class="mobileShow">
 							<label class="switch switch-flat">
 								<input class="switch-input" type="checkbox"/>
 								<span class="switch-label" data-on="Lights On" data-off="Lights Off"></span>
 								<span class="switch-handle"></span>
 							</label>
-						</div>
+						</div-->
 						<li><a href="#week1" class="active">Introduction</a></li>
 						<li><a href="#week2">Work-Life Balance</a></li>
 						<li><a href="#week3">React.js</a></li>
@@ -172,7 +176,7 @@
 										<div class="panel">
 											<br />
 											<center>
-												<img alt="aptEmail" src="images/newLead.png" style="max-height: 400px;"/>
+												<img alt="aptEmail" src="images/newLead.png" style="max-height: 400px;" class='mobile-image'/>
 												<p>After someone completes our TourMagnet on an apartment's site, we send
 													an email notifying the apartment that they have a new lead, along with the
 													lead's information from the video tour.</p>
@@ -182,7 +186,7 @@
 										<div class="panel">
 											<br />
 											<center>
-												<img alt="promoEmail" src="images/promoCode.png" style="max-height: 400px;"/>
+												<img alt="promoEmail" src="images/promoCode.png" style="max-height: 400px;" class='mobile-image'/>
 												<p>When someone finished the TourMagnet, they are given a discount on
 														one of the apartment's fees. Thus, this email is sent to the lead
 														to given them the promo code. (Featured: Cayce Cove)</p>
@@ -192,7 +196,7 @@
 										<div class="panel">
 											<br />
 											<center>
-												<img alt="analyticsEmail" src="images/analytics.png" style="max-height: 400px;"/>
+												<img alt="analyticsEmail" src="images/analytics.png" style="max-height: 400px;" class='mobile-image'/>
 												<p>Every week, we send an email to all of our clients to update them
 														on how our Magnets have performed on their website. (Featured: Cayce Cove)</p>
 											</center>
@@ -201,7 +205,7 @@
 										<div class="panel">
 											<br />
 											<center>
-												<img alt="leadsTable" src="images/leadsTable.jpeg" style="max-height: 400px;" />
+												<img alt="leadsTable" src="images/leadsTable.jpeg" style="max-height: 400px;" class='mobile-image'/>
 												<p>While most apartments mainly only use their existing CRM, we want
 														to give apartment owners and their team the possibility of a more detailed table
 														about the leads generated through our Magnets.</p>
@@ -211,7 +215,7 @@
 										<div class="panel">
 											<br />
 											<center>
-												<img alt="upload" src="images/upload.png" style="max-height: 400px;" />
+												<img alt="upload" src="images/upload.png" style="max-height: 400px;" class='mobile-image'/>
 												<p>Thus far, we have been creating our TourMagnets (video tour) manually
 													(client sends us videos, we make everything). However, we have been working
 													on a dashboard in order to let the customer create everything and have full
@@ -223,8 +227,8 @@
 										<div class="panel">
 											<br />
 											<center>
-												<p><img alt="email1" src="images/preEmail.png" style="max-height: 300px;" />
-												<img alt="email1" src="images/postEmail.png" style="max-height: 300px;" />
+												<p><img alt="email1" src="images/preEmail.png" style="max-height: 300px;" class='mobile-image'/>
+												<img alt="email1" src="images/postEmail.png" style="max-height: 300px;" class='mobile-image'/>
 												<br />
 												Throwback to my first project! For my first emailing project, I had to
 												manually customize each company's emails. Now, we want the client to be able
@@ -236,9 +240,9 @@
 										<div class="panel">
 											<br />
 											<center>
-												<p><img alt="email1" src="images/inactive.png" style="max-width: 400px;" />
-												<img alt="email1" src="images/plan.png" style="max-height: 250px;" />
-												<img alt="email1" src="images/active.png" style="max-height: 250px;" />
+												<p>
+												<img alt="plan" src="images/plan.png" style="max-height: 250px;" class='mobile-image'/>
+												<img alt="active" src="images/active.png" style="max-height: 250px;" class='mobile-image'/>
 												<br />
 												This page allows clients to select their subscription plan
 												for our TourMagnet & pay for it all on our dashboard!
