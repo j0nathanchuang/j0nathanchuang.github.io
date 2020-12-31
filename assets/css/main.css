@@ -27,14 +27,13 @@ section, summary, time, mark, audio, video {
 }
 
 /*Switch class*/
-.switch {
+/* .switch {
 	position: relative;
 	display: block;
 	vertical-align: top;
 	width: 100px;
 	height: 30px;
 	padding: 3px;
-	/*margin: 0 0 10px 0;*/
 	margin-left: auto;
 	margin-right: auto;
 	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
@@ -156,15 +155,15 @@ section, summary, time, mark, audio, video {
 	left: 72px;
 	background: #4acaa8;
 	box-shadow: none;
-}
+} */
 /* Transition
 ========================== */
-.switch-label, .switch-handle {
+/* .switch-label, .switch-handle {
 	transition: All 0.3s ease;
 	-webkit-transition: All 0.3s ease;
 	-moz-transition: All 0.3s ease;
 	-o-transition: All 0.3s ease;
-}
+} */
 /*End switch class*/
 
 .miniSpan {
