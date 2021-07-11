@@ -261,10 +261,13 @@ section, summary, time, mark, audio, video {
 }
 /*Hides information by default*/
 .panel {
-  padding: 0 18px;
+  padding: 25px;
+	padding-bottom: 0px;
   display: none;
   background-color: white;
   overflow: hidden;
+	border-left: 2px solid #f9f9f9;
+	border-right: 2px solid #f9f9f9;
 }
 
 article, aside, details, figcaption, figure,
