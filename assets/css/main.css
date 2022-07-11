@@ -24,6 +24,7 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	scroll-behavior: smooth;
 }
 
 /*Switch class*/
@@ -366,6 +367,20 @@ input, select, textarea {
 			border-bottom-color: transparent;
 			color: #4acaa8 !important;
 			isolation: isolate;
+		}
+
+		a.album {
+			display: inline-block;
+			padding: 0em 1.5em 1em 1.5em;
+			vertical-align: middle;
+			width: 32%;
+			border-bottom-color: transparent;
+		}
+
+		a.album img {
+			display: block;
+			border-radius: 2px;
+			width: 100%;
 		}
 
 	strong, b {
@@ -3095,7 +3110,7 @@ input, select, textarea {
 	}
 
 		#main > section > .container {
-			padding: 6em 0 4em 0;
+			padding: 4em 0 4em 0;
 		}
 
 		#main > section:first-child {
@@ -3173,6 +3188,10 @@ input, select, textarea {
 				padding: 4em 0 2em 0;
 			}
 
+			.spotify {
+				width: 49%;
+			}
+
 	}
 
 /* Large */
@@ -3196,6 +3215,10 @@ input, select, textarea {
 			#wrapper {
 				padding-right: 20em;
 			}
+
+			.spotify {
+				width: 49%;
+			}	
 
 	}
 
@@ -3371,6 +3394,10 @@ input, select, textarea {
 				transform: translateX(0);
 			}
 
+		.spotify {
+			width: 49%;
+		}	
+
 	}
 
 /* Small */
@@ -3516,6 +3543,14 @@ input, select, textarea {
 				transform: translateX(-17em);
 			}
 
+			.spotify {
+				width: 100%;
+			}
+
+			a.album {
+				width: 49%;
+			}
+
 	}
 
 /* XSmall */
@@ -3580,8 +3615,16 @@ input, select, textarea {
 				padding: 0;
 			}
 
+			.spotify {
+				width: 100%;
+			}
+			
 	}
 
 	.dark-mode * {
 		background-color: #313131;
+	}
+
+	.spotify {
+		isolation: isolate;
 	}
