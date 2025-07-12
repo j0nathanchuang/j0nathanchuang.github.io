@@ -7,556 +7,317 @@
 -->
 
 <html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-169426206-1"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
 
-      gtag('config', 'UA-169426206-1');
-    </script>
-    <!--END Google Analytics-->
-    <meta name="title" content="Jonathan Chuang's Music Library" />
-    <title>Music</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <meta name="description" content="Jonathan Chuang's Music Library" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon_io/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon_io/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon_io/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon_io/site.webmanifest" />
-    <style type="text/css">
-      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        .mobile-image {
-          max-width: 250px;
-        }
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169426206-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-169426206-1');
+  </script>
+  <!--END Google Analytics-->
+  <meta name="title" content="Jonathan Chuang's Music Library" />
+  <title>Music</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta name="description" content="Jonathan Chuang's Music Library" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png" />
+  <link rel="manifest" href="favicon_io/site.webmanifest" />
+  <style type="text/css">
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .mobile-image {
+        max-width: 250px;
       }
-      /* .mobileShow {display: none;}
+    }
+
+    /* .mobileShow {display: none;}
 
 		  @media only screen
 		    and (min-device-width : 320px)
 		    and (max-device-width : 480px){
 		      .mobileShow {display: inline;}
 		  } */
-    </style>
-  </head>
-  <body class="is-preload">
-    <!-- Header -->
-    <section id="header">
-      <header>
-        <link rel="canonical" href="https://jonathanchuang.me" />
-        <span class="image avatar"
-          ><img
-            src="https://i.scdn.co/image/ab6775700000ee8579e0efb9b66f4cdc0c1bd2a0"
-            alt="selfie"
-        /></span>
-        <meta name="h1" content="Music" />
-        <h1 id="logo"><a href="#">Jonathan Chuang</a></h1>
-        <p>
-          Music Enthusiast
-          <br />
-          University of Michigan B.S. 2022
-        </p>
-      </header>
-      <nav id="nav">
-        <ul>
-          <!--div class="mobileShow">
+  </style>
+</head>
+
+<body class="is-preload">
+  <!-- Header -->
+  <section id="header">
+    <header>
+      <link rel="canonical" href="https://jonathanchuang.me" />
+      <span class="image avatar"><img src="https://i.scdn.co/image/ab6775700000ee8579e0efb9b66f4cdc0c1bd2a0"
+          alt="selfie" /></span>
+      <meta name="h1" content="Music" />
+      <h1 id="logo"><a href="#">Jonathan Chuang</a></h1>
+      <p>
+        Music Enthusiast
+        <br />
+        University of Michigan B.S. 2022
+      </p>
+    </header>
+    <nav id="nav">
+      <ul>
+        <!--div class="mobileShow">
 							<label class="switch switch-flat">
 								<input class="switch-input" type="checkbox"/>
 								<span class="switch-label" data-on="Lights On" data-off="Lights Off"></span>
 								<span class="switch-handle"></span>
 							</label>
 						</div-->
-          <li><a href="#artists" class="active">Artists</a></li>
-          <li><a href="#albums">Albums</a></li>
-          <li><a href="#songs">Songs</a></li>
-          <li><a href="#playlists">Playlists</a></li>
-          <li><a href="https://jonathanchuang.me/">Home</a></li>
-        </ul>
-      </nav>
-      <footer>
-        <ul class="icons">
-          <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/j0nathanchuang/"
-              class="icon brands fa-linkedin"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://github.com/j0nathanchuang"
-              class="icon brands fa-github"
-              ><span class="label">Github</span></a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/j0nathanchuang/"
-              class="icon brands fa-facebook-f"
-              ><span class="label">Facebook</span></a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/j0nathanchuang/"
-              class="icon brands fa-instagram"
-              ><span class="label">Instagram</span></a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              href="mailto:jochuang@umich.edu"
-              class="icon solid fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-          <li>
-            <a target="_blank" href="Resume.pdf" class="icon solid fa-download"
-              ><span class="label">Resume</span></a
-            >
-          </li>
-        </ul>
-      </footer>
-    </section>
+        <li><a href="#artists" class="active">Artists</a></li>
+        <li><a href="#albums">Albums</a></li>
+        <li><a href="#songs">Songs</a></li>
+        <li><a href="#playlists">Playlists</a></li>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+    <footer>
+      <ul class="icons">
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/j0nathanchuang/" class="icon brands fa-linkedin"><span
+              class="label">LinkedIn</span></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/j0nathanchuang" class="icon brands fa-github"><span
+              class="label">Github</span></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.instagram.com/j0nathanchuang/" class="icon brands fa-instagram"><span
+              class="label">Instagram</span></a>
+        </li>
+        <li>
+          <a target="_blank" href="mailto:jonathanchuang.dev@gmail.com" class="icon solid fa-envelope"><span
+              class="label">Email</span></a>
+        </li>
+        <li>
+          <a target="_blank" href="Resume.pdf" class="icon solid fa-download"><span class="label">Resume</span></a>
+        </li>
+      </ul>
+    </footer>
+  </section>
 
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Blog -->
-      <div id="main">
-        <!-- Header -->
-        <section id="main">
-          <div class="image main" data-position="center">
-            <img
-              src="images/banner.png"
-              alt="University of Michigan North Campus"
-            />
-          </div>
-          <div class="container">
-            <header class="major">
-              <h2>My Music Library</h2>
-            </header>
-            <p>
-              Welcome to my music library. Before diving in, let's get some
-              things straight. Spotify is
-              <strong><i>way better</i></strong> than Apple Music. I have the
-              best music taste. Enjoy! <br /><br />
-              Explore my entire discography
-              <a
-                href="https://open.spotify.com/user/1240388369?si=f146a3bc40074cc4"
-                target="_blank"
-                >here</a
-              >.
-            </p>
-          </div>
-        </section>
-
-        <!-- Artists -->
-        <section id="artists">
-          <div class="container">
-            <h3>Featured Artists</h3>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/artist/3ApUX1o6oSz321MMECyIYd?si=u84goc8KTcSo7I96P5c_aw"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab6761610000e5ebc5bf602162d30b7133cfe96a"
-                alt="Quinn XCII"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab6761610000e5eb436d45fb9b11ad089e0e3c11"
-                alt="Dominic Fike"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/artist/1mcTU81TzQhprhouKaTkpq?si=ejltoHoRRQW0y11ytM3WdQ"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab6761610000e5eb754fd19c86184acc854b79a6"
-                alt="Rauw Alejandro"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc"
-                alt="Post Malone"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab6761610000e5ebadd503b411a712e277895c8a""
-                alt="J. Cole"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/artist/0vTVU0KH0CVzijsoKGsTPl"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab67616100005174d81928154288fe971461b05d"
-                alt="Barry Can't Swim"
-              />
-            </a>
-          </div>
-        </section>
-
-        <!-- Albums -->
-        <section id="albums">
-          <div class="container">
-            <h3>Featured Albums</h3>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/album/2T7LuxZRr6SQMgABLtoYTH"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab67616d00001e020fb08616c78d44ceb4c8d061"
-                alt="Sunburn by Dominic Fike"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/album/1dVw3jSdgZp7PfGhCEo32t"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab67616d00001e02f83dbc7461aefc08696811c0"
-                alt="A Letter to My Younger Self by Quinn XCII"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/album/5s0rmjP8XOPhP6HhqOhuyC"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab67616d0000b27355404f712deb84d0650a4b41"
-                alt="Stoney by Post Malone"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/album/6kf46HbnYCZzP6rjvQHYzg"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab67616d0000b273988ede5e1276e758b5f9e577"
-                alt="American Teen by Khalid"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/album/2ZGkTvwtwDoembcBr8SS0d"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab67616d0000b2739f49ffe7fe94bdd0f2f98af2"
-                alt="The Sailor by Rich Brian"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/album/5sY6UIQ32GqwMLAfSNEaXb"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab67616d00001e0226b7dd89810cc1a40ada642c"
-                alt="Circles by Mac Miller"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/album/0UMMIkurRUmkruZ3KGBLtG"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab67616d0000b273c6e0948bbb0681ff29cdbae8"
-                alt="2014 Forest Hills Drive by J. Cole"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/album/3xybjP7r2VsWzwvDQipdM0"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab67616d0000b2733138f891f3075c9c5d944037"
-                alt="Freudian by Daniel Caesar"
-              />
-            </a>
-            <a
-              target="_blank"
-              href="https://open.spotify.com/album/71QyofYesSsRMwFOTafnhB"
-              class="album"
-            >
-              <img
-                src="https://i.scdn.co/image/ab67616d0000b273e71dd15fc5bdefd5bff70452"
-                alt="Coloring Book by Chance the Rapper"
-              />
-            </a>
-          </div>
-        </section>
-
-        <!-- Songs -->
-        <section id="songs">
-          <div class="container">
-            <h3>Featured Songs</h3>
-            <p>Some of my favorite songs all-time & currently.</p>
-            <center>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/track/4HSAay5C126EFXqm8pxCAQ?utm_source=generator"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/track/5APPlPgagEAXjGLIizqSDS?utm_source=generator"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/track/26hOm7dTtBi0TdpDGl141t?utm_source=generator"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe 
-                class="spotify"
-                style="border-radius: 4px" 
-                src="https://open.spotify.com/embed/track/6mfM11rZkoXsU5xAArF4Ix?utm_source=generator" 
-                height="80" 
-                frameBorder="0" 
-                allowfullscreen="" 
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/track/4VUXAoJESfRV3ceUYtzfpQ?utm_source=generator"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/track/3Wx98ijEDnsxyMYePCuFNI?utm_source=generator"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/track/7M3HuQRRAm1QD4kftmq0bb?utm_source=generator"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/track/0khVEzctbwmqLvOpg1ecbg?utm_source=generator"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/track/4CxmynXhw78QefruycvxG8?utm_source=generator"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/track/0qynxleiY0wavOijAW9trC?utm_source=generator"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/track/6ECp64rv50XVz93WvxXMGF?utm_source=generator"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/track/34gCuhDGsG4bRPIf9bb02f?utm_source=generator"
-                height="80"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-            </center>
-          </div>
-        </section>
-
-        <!-- Playlists -->
-        <section id="playlists">
-          <div class="container">
-            <h3>My Playlists</h3>
-            <p>
-              A wide variety of different genres, depending on the mood I am in.
-              Shuffle play for best experience.
-            </p>
-            <center>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/playlist/2dRHBG6V5YstjERXHFoeUK?utm_source=generator"
-                height="180"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/playlist/78sqcbAHuK8aCdr12LRjnw?utm_source=generator"
-                height="180"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/playlist/1MR7NYZIYOTC7OFaDGENBR?utm_source=generator"
-                height="180"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/playlist/25oXVvrNo1eutudCyaR4uc?utm_source=generator"
-                height="180"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/playlist/7d1enX5EjopOr7mFXGgagH?utm_source=generator"
-                height="180"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-              <iframe
-                class="spotify"
-                style="border-radius: 4px"
-                src="https://open.spotify.com/embed/playlist/2WLDvcwytFxNlOxBIHLjVh?utm_source=generator"
-                height="180"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              ></iframe>
-            </center>
-          </div>
-        </section>
-      </div>
-
-      <!-- Footer -->
-      <section id="footer">
+  <!-- Wrapper -->
+  <div id="wrapper">
+    <!-- Blog -->
+    <div id="main">
+      <!-- Header -->
+      <section id="main">
+        <div class="image main" data-position="center">
+          <img src="images/banner.png" alt="University of Michigan North Campus" />
+        </div>
         <div class="container">
-          <ul class="copyright">
-            <li>
-              &copy; Jonathan Chuang 2020. All rights reserved. Shoutout to
-              <a target="_blank" href="http://natecation.com">Nathan Leung</a>
-            </li>
-            <li>
-              Design:
-              <a target="_blank" href="http://html5up.net">HTML5 UP</a>
-            </li>
-          </ul>
+          <header class="major">
+            <h2>My Music Library</h2>
+          </header>
+          <p>
+            Welcome to my music library. Before diving in, let's get some
+            things straight. Spotify is
+            <strong><i>way better</i></strong> than Apple Music. I have the
+            best music taste. Enjoy! <br /><br />
+            Explore my entire discography
+            <a href="https://open.spotify.com/user/1240388369?si=f146a3bc40074cc4" target="_blank">here</a>.
+          </p>
         </div>
       </section>
 
-      <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.scrollex.min.js"></script>
-      <script src="assets/js/jquery.scrolly.min.js"></script>
-      <script src="assets/js/browser.min.js"></script>
-      <script src="assets/js/breakpoints.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <script src="assets/js/main.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
-      <script src="assets/js/darkmode.js"></script>
+      <!-- Artists -->
+      <section id="artists">
+        <div class="container">
+          <h3>Featured Artists</h3>
+          <a target="_blank" href="https://open.spotify.com/artist/3ApUX1o6oSz321MMECyIYd?si=u84goc8KTcSo7I96P5c_aw"
+            class="album">
+            <img src="https://i.scdn.co/image/ab6761610000e5ebc5bf602162d30b7133cfe96a" alt="Quinn XCII" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/artist/6USv9qhCn6zfxlBQIYJ9qs" class="album">
+            <img src="https://i.scdn.co/image/ab6761610000e5eb436d45fb9b11ad089e0e3c11" alt="Dominic Fike" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/artist/1mcTU81TzQhprhouKaTkpq?si=ejltoHoRRQW0y11ytM3WdQ"
+            class="album">
+            <img src="https://i.scdn.co/image/ab6761610000e5eb754fd19c86184acc854b79a6" alt="Rauw Alejandro" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60" class="album">
+            <img src="https://i.scdn.co/image/ab6761610000e5ebb894ef9fa437b0389c5567cc" alt="Post Malone" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5" class="album">
+            <img src="https://i.scdn.co/image/ab6761610000e5ebadd503b411a712e277895c8a""
+                alt=" J. Cole" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/artist/0vTVU0KH0CVzijsoKGsTPl" class="album">
+            <img src="https://i.scdn.co/image/ab67616100005174d81928154288fe971461b05d" alt="Barry Can't Swim" />
+          </a>
+        </div>
+      </section>
+
+      <!-- Albums -->
+      <section id="albums">
+        <div class="container">
+          <h3>Featured Albums</h3>
+          <a target="_blank" href="https://open.spotify.com/album/2T7LuxZRr6SQMgABLtoYTH" class="album">
+            <img src="https://i.scdn.co/image/ab67616d00001e020fb08616c78d44ceb4c8d061" alt="Sunburn by Dominic Fike" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/album/1dVw3jSdgZp7PfGhCEo32t" class="album">
+            <img src="https://i.scdn.co/image/ab67616d00001e02f83dbc7461aefc08696811c0"
+              alt="A Letter to My Younger Self by Quinn XCII" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/album/5s0rmjP8XOPhP6HhqOhuyC" class="album">
+            <img src="https://i.scdn.co/image/ab67616d0000b27355404f712deb84d0650a4b41" alt="Stoney by Post Malone" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/album/6kf46HbnYCZzP6rjvQHYzg" class="album">
+            <img src="https://i.scdn.co/image/ab67616d0000b273988ede5e1276e758b5f9e577" alt="American Teen by Khalid" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/album/2ZGkTvwtwDoembcBr8SS0d" class="album">
+            <img src="https://i.scdn.co/image/ab67616d0000b2739f49ffe7fe94bdd0f2f98af2"
+              alt="The Sailor by Rich Brian" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/album/5sY6UIQ32GqwMLAfSNEaXb" class="album">
+            <img src="https://i.scdn.co/image/ab67616d00001e0226b7dd89810cc1a40ada642c" alt="Circles by Mac Miller" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/album/0UMMIkurRUmkruZ3KGBLtG" class="album">
+            <img src="https://i.scdn.co/image/ab67616d0000b273c6e0948bbb0681ff29cdbae8"
+              alt="2014 Forest Hills Drive by J. Cole" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/album/3xybjP7r2VsWzwvDQipdM0" class="album">
+            <img src="https://i.scdn.co/image/ab67616d0000b2733138f891f3075c9c5d944037"
+              alt="Freudian by Daniel Caesar" />
+          </a>
+          <a target="_blank" href="https://open.spotify.com/album/71QyofYesSsRMwFOTafnhB" class="album">
+            <img src="https://i.scdn.co/image/ab67616d0000b273e71dd15fc5bdefd5bff70452"
+              alt="Coloring Book by Chance the Rapper" />
+          </a>
+        </div>
+      </section>
+
+      <!-- Songs -->
+      <section id="songs">
+        <div class="container">
+          <h3>Featured Songs</h3>
+          <p>Some of my favorite songs all-time & currently.</p>
+          <center>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/4HSAay5C126EFXqm8pxCAQ?utm_source=generator" height="80"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/5APPlPgagEAXjGLIizqSDS?utm_source=generator" height="80"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/26hOm7dTtBi0TdpDGl141t?utm_source=generator" height="80"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/6mfM11rZkoXsU5xAArF4Ix?utm_source=generator" height="80"
+              frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/4VUXAoJESfRV3ceUYtzfpQ?utm_source=generator" height="80"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/3Wx98ijEDnsxyMYePCuFNI?utm_source=generator" height="80"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/7M3HuQRRAm1QD4kftmq0bb?utm_source=generator" height="80"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/0khVEzctbwmqLvOpg1ecbg?utm_source=generator" height="80"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/4CxmynXhw78QefruycvxG8?utm_source=generator" height="80"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/0qynxleiY0wavOijAW9trC?utm_source=generator" height="80"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/6ECp64rv50XVz93WvxXMGF?utm_source=generator" height="80"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/track/34gCuhDGsG4bRPIf9bb02f?utm_source=generator" height="80"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </center>
+        </div>
+      </section>
+
+      <!-- Playlists -->
+      <section id="playlists">
+        <div class="container">
+          <h3>My Playlists</h3>
+          <p>
+            A wide variety of different genres, depending on the mood I am in.
+            Shuffle play for best experience.
+          </p>
+          <center>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/playlist/2dRHBG6V5YstjERXHFoeUK?utm_source=generator" height="180"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/playlist/78sqcbAHuK8aCdr12LRjnw?utm_source=generator" height="180"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/playlist/1MR7NYZIYOTC7OFaDGENBR?utm_source=generator" height="180"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/playlist/25oXVvrNo1eutudCyaR4uc?utm_source=generator" height="180"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/playlist/7d1enX5EjopOr7mFXGgagH?utm_source=generator" height="180"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe class="spotify" style="border-radius: 4px"
+              src="https://open.spotify.com/embed/playlist/2WLDvcwytFxNlOxBIHLjVh?utm_source=generator" height="180"
+              frameborder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          </center>
+        </div>
+      </section>
     </div>
-  </body>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <ul class="copyright">
+          <li>
+            &copy; Jonathan Chuang 2020. All rights reserved. Shoutout to
+            <a target="_blank" href="http://natecation.com">Nathan Leung</a>
+          </li>
+          <li>
+            Design:
+            <a target="_blank" href="http://html5up.net">HTML5 UP</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+    <script src="assets/js/darkmode.js"></script>
+  </div>
+</body>
+
 </html>
