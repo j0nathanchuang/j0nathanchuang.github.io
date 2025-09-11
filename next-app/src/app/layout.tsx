@@ -8,8 +8,8 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: 'My Portfolio',
-  description: 'A modern portfolio built with Next.js and Shadcn/ui',
+  title: 'Jonathan Chuang',
+  description: 'Jonathan Chuang - overview of his skills and experiences',
 };
 
 export default function RootLayout({
