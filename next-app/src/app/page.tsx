@@ -21,7 +21,7 @@ export default function Home() {
             height={38}
             priority
           />
-          <h1 className="text-4xl font-bold tracking-tight text-blue-600 bg-gray-100 p-4 rounded-lg">
+          <h1 className="text-4xl font-bold tracking-tight text-primary bg-muted p-4 rounded-lg">
             Welcome to Shadcn/ui
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

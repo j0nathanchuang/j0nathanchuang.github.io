@@ -18,7 +18,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ['var(--font-raleway)'],
+        sans: ['var(--font-figtree)'],
       },
       colors: {
         border: 'hsl(var(--border))',

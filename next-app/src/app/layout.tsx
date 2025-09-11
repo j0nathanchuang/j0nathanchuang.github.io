@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Raleway } from 'next/font/google';
+import { Figtree } from 'next/font/google';
 import './globals.css';
 
-const raleway = Raleway({
-  variable: '--font-raleway',
+const figtree = Figtree({
+  variable: '--font-figtree',
   subsets: ['latin'],
 });
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={raleway.variable}>
+    <html lang="en" className={figtree.variable}>
       <body className="min-h-screen bg-background font-sans antialiased">
         {children}
       </body>
