@@ -19,8 +19,8 @@
     /* Primary: #2e612e */
     --primary: 120 36% 28%;
     --primary-foreground: 60 69% 97%;
-    /* Secondary: #f58b2e */
-    --secondary: 28 91% 57%;
+    /* Secondary: #b7e2b7 */
+    --secondary: 120 36% 75%;
     --secondary-foreground: 0 0% 14%;
     /* Supporting tokens */
     --muted: 60 30% 94%;
@@ -45,7 +45,7 @@
     --popover-foreground: 60 69% 97%;
     --primary: 120 36% 28%;
     --primary-foreground: 60 69% 97%;
-    --secondary: 28 91% 57%;
+    --secondary: 120 36% 75%;
     --secondary-foreground: 0 0% 14%;
     --muted: 0 0% 20%;
     --muted-foreground: 60 3% 70%;
