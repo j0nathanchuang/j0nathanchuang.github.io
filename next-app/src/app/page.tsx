@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <main>
-        <div className="w-full px-16 pt-12 bg-gradient-to-b from-secondary/60 to-background dark:from-secondary/50 dark:to-background">
+        <div className="w-full px-16 lg:px-24 pt-12 bg-gradient-to-b from-secondary/60 to-background dark:from-secondary/50 dark:to-background">
           {/* Hero */}
           <section className="grid grid-cols-1 lg:grid-cols-[6.5fr_3.5fr] gap-10 items-center mb-8">
             <div className="space-y-6">
@@ -94,10 +94,10 @@ export default function Home() {
           </section>
         </div>
 
-        <div className="container mx-auto px-16 pt-8 pb-12">
+        <div className="container mx-auto px-16 lg:px-48 pt-8 pb-12">
           {/* About */}
           <section className="mb-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-[6fr_4fr] gap-10 items-start">
               <div className="space-y-4">
                 <h2 className="text-3xl font-semibold">About me</h2>
                 <p className="text-muted-foreground">
@@ -125,20 +125,17 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                <li className="rounded-md border bg-muted/40 p-4">
-                  TypeScript, React, Next.js, SQL, Python
-                </li>
-                <li className="rounded-md border bg-muted/40 p-4">
-                  AWS, Railway, Stigg, Stripe, WorkOS
-                </li>
-                <li className="rounded-md border bg-muted/40 p-4">
-                  LLMs, Cursor, Postman, Devin
-                </li>
-                <li className="rounded-md border bg-muted/40 p-4">
-                  English, Mandarin, Spanish
-                </li>
-              </ul>
+              <div className="flex items-center justify-center">
+                <div className="w-48 h-48 flex items-center justify-center">
+                  <DotLottieReact
+                    src="/basketball.lottie"
+                    loop
+                    autoplay
+                    speed={0.7}
+                    style={{ width: '100%', height: '100%' }}
+                  />
+                </div>
+              </div>
             </div>
           </section>
 
