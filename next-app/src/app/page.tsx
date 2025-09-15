@@ -35,10 +35,6 @@ export default function Home() {
           {/* Hero */}
           <section className="grid grid-cols-1 lg:grid-cols-[6.5fr_3.5fr] gap-10 items-center mb-8">
             <div className="space-y-6">
-              <div className="inline-flex gap-1 items-center rounded-full border bg-muted/50 px-3 py-1 text-xs text-muted-foreground">
-                <BriefcaseBusiness size={12} />
-                Full‑stack Software Engineer at Greenlight
-              </div>
               <H1 color="primary">
                 <TypeWriter
                   text="Hi I'm Jonathan, nice to meet you!"
@@ -61,27 +57,23 @@ export default function Home() {
               </Muted>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button size="lg" asChild>
-                  <Link
-                    href="mailto:jonathanchuang.dev@gmail.com"
-                    variant="button"
-                  >
+                  <Link href="/#contact" variant="button">
                     Get in touch
                   </Link>
                 </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <Link href="#services" variant="button">
-                    Browse services
-                  </Link>
-                </Button>
               </div>
-              <div className="flex items-center gap-4 pt-2">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 pt-2">
+                <div className="flex items-center gap-1">
+                  <BriefcaseBusiness size={14} />
+                  <XSmall>Full‑stack Software Engineer at Greenlight</XSmall>
+                </div>
                 <div className="flex items-center gap-1">
                   <GraduationCap size={14} />
                   <XSmall>University of Michigan B.S. 2022</XSmall>
                 </div>
                 <div className="flex items-center gap-1">
                   <MapPin size={14} />
-                  <XSmall>Based in Chicago</XSmall>
+                  <XSmall>Chicago</XSmall>
                 </div>
               </div>
             </div>
