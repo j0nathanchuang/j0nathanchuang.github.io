@@ -10,6 +10,15 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { TypeWriter } from '@/components/ui/typewriter';
+import {
+  H1,
+  H2,
+  H3,
+  P,
+  Small,
+  Muted,
+  XSmall,
+} from '@/components/ui/typography';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import {
   MapPin,
@@ -33,14 +42,14 @@ export default function Home() {
                 <BriefcaseBusiness size={12} />
                 Full‑stack Software Engineer at Greenlight
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-primary">
+              <H1 color="primary">
                 <TypeWriter
                   text="Hi I'm Jonathan, nice to meet you!"
                   speed={50}
                   delay={200}
                 />
-              </h1>
-              <p className="text-lg text-muted-foreground max-w-3xl">
+              </H1>
+              <Muted className="text-lg max-w-3xl">
                 I help startups build, ship, and scale. Previously at
                 <a
                   href="https://www.getmagical.com/"
@@ -62,7 +71,7 @@ export default function Home() {
                   Greenlight
                 </a>
                 .
-              </p>
+              </Muted>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button size="lg" asChild>
                   <a href="mailto:jonathanchuang.dev@gmail.com">Get in touch</a>
@@ -71,14 +80,14 @@ export default function Home() {
                   <a href="#services">Browse services</a>
                 </Button>
               </div>
-              <div className="flex items-center gap-4 text-xs text-muted-foreground pt-2">
+              <div className="flex items-center gap-4 pt-2">
                 <div className="flex items-center gap-1">
                   <GraduationCap size={14} />
-                  <span>University of Michigan B.S. 2022</span>
+                  <XSmall>University of Michigan B.S. 2022</XSmall>
                 </div>
                 <div className="flex items-center gap-1">
                   <MapPin size={14} />
-                  <span>Based in Chicago</span>
+                  <XSmall>Based in Chicago</XSmall>
                 </div>
               </div>
             </div>
@@ -96,9 +105,9 @@ export default function Home() {
 
           {/* Social proof */}
           <section className="mb-8">
-            <p className="text-sm text-muted-foreground mb-4 text-center text-primary">
+            <Muted color="primary" className="mb-4 text-center">
               Loved by teams at
-            </p>
+            </Muted>
             <div className="w-full flex justify-center">
               <Image
                 src="/social_proof.svg"
@@ -116,10 +125,8 @@ export default function Home() {
           <section className="mb-20">
             <div className="grid grid-cols-1 md:grid-cols-[6fr_4fr] gap-10 items-start">
               <div className="space-y-4">
-                <h2 className="text-3xl font-semibold text-primary">
-                  About me
-                </h2>
-                <p className="text-muted-foreground">
+                <H2 color="primary">About me</H2>
+                <P color="muted">
                   I'm driven by building software that makes people's lives
                   better. Outside of work you can find me on a basketball or
                   tennis court, listening to{' '}
@@ -128,7 +135,7 @@ export default function Home() {
                   </a>
                   , or trying new recipes. I aspire to be as good of a chef as
                   my mom one day.
-                </p>
+                </P>
                 <div className="flex gap-3">
                   <Button variant="secondary" asChild>
                     <a
@@ -160,9 +167,9 @@ export default function Home() {
 
           {/* Experience */}
           <section className="mb-20">
-            <h2 className="text-3xl font-semibold mb-6 text-primary">
+            <H2 color="primary" className="mb-6">
               Experience
-            </h2>
+            </H2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card>
                 <CardHeader>
@@ -212,7 +219,7 @@ export default function Home() {
           {/* Skills */}
           <section className="mb-20">
             <div className="space-y-6">
-              <h2 className="text-3xl font-semibold text-primary">Skills</h2>
+              <H2 color="primary">Skills</H2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="group flex items-center gap-3 p-4 rounded-lg border border-border/50">
                   <div className="p-2 rounded-md bg-primary/10">
@@ -250,9 +257,9 @@ export default function Home() {
 
           {/* Projects */}
           <section className="mb-20">
-            <h2 className="text-3xl font-semibold mb-6 text-primary">
+            <H2 color="primary" className="mb-6">
               Projects
-            </h2>
+            </H2>
             <Card className="overflow-hidden">
               <CardHeader>
                 <CardTitle>
@@ -284,12 +291,10 @@ export default function Home() {
             <div className="rounded-xl border bg-muted/40 p-6 sm:p-8">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
-                  <h3 className="text-2xl font-semibold">
-                    Let’s build something great
-                  </h3>
-                  <p className="text-muted-foreground">
+                  <H3>Let's build something great</H3>
+                  <P className="text-muted-foreground">
                     Email is best. I read everything.
-                  </p>
+                  </P>
                 </div>
                 <div className="flex flex-wrap gap-3">
                   <Button size="lg" asChild>
@@ -322,12 +327,12 @@ export default function Home() {
 
       <footer className="border-t bg-muted/50">
         <div className="container mx-auto px-4 py-8 text-sm text-muted-foreground flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p>
+          <Small>
             © {new Date().getFullYear()} Jonathan Chuang. All rights reserved.
-          </p>
+          </Small>
           <div className="flex items-center gap-3">
             <Image src="/globe.svg" alt="Globe" width={16} height={16} />
-            <span>Built with Next.js and shadcn/ui</span>
+            <Small>Built with Next.js and shadcn/ui</Small>
           </div>
         </div>
       </footer>
