@@ -99,7 +99,9 @@ export default function Home() {
           <section className="mb-20">
             <div className="grid grid-cols-1 md:grid-cols-[6fr_4fr] gap-10 items-start">
               <div className="space-y-4">
-                <h2 className="text-3xl font-semibold">About me</h2>
+                <h2 className="text-3xl font-semibold text-primary">
+                  About me
+                </h2>
                 <p className="text-muted-foreground">
                   I'm driven by building software that makes people's lives
                   better. Outside of work you can find me on a basketball or
@@ -141,7 +143,9 @@ export default function Home() {
 
           {/* Experience */}
           <section className="mb-20">
-            <h2 className="text-3xl font-semibold mb-6">Experience</h2>
+            <h2 className="text-3xl font-semibold mb-6 text-primary">
+              Experience
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <Card>
                 <CardHeader>
@@ -192,7 +196,7 @@ export default function Home() {
           <section className="mb-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
               <div className="space-y-4">
-                <h2 className="text-3xl font-semibold">Skills</h2>
+                <h2 className="text-3xl font-semibold text-primary">Skills</h2>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
                   <li className="rounded-md border bg-muted/40 p-4">
                     TypeScript, React, Next.js, SQL, Python
@@ -227,7 +231,9 @@ export default function Home() {
 
           {/* Projects */}
           <section className="mb-20">
-            <h2 className="text-3xl font-semibold mb-6">Projects</h2>
+            <h2 className="text-3xl font-semibold mb-6 text-primary">
+              Projects
+            </h2>
             <Card className="overflow-hidden">
               <CardHeader>
                 <CardTitle>
