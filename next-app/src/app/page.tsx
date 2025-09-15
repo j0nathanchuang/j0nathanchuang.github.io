@@ -19,6 +19,7 @@ import {
   Muted,
   XSmall,
 } from '@/components/ui/typography';
+import { Link } from '@/components/ui/link';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import {
   MapPin,
@@ -51,33 +52,30 @@ export default function Home() {
               </H1>
               <Muted className="text-lg max-w-3xl">
                 I help startups build, ship, and scale. Previously at
-                <a
-                  href="https://www.getmagical.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline underline-offset-4 ml-1"
-                >
+                <Link href="https://www.getmagical.com/" className="ml-1">
                   Magical
-                </a>
+                </Link>
                 , I led monetization and enterprise features, helping grow from
                 a pre‑revenue Chrome extension to $2M+ ARR. Now I'm excited to
                 continue my professional journey at
-                <a
-                  href="https://www.greenlight.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="underline underline-offset-4 ml-1"
-                >
+                <Link href="https://www.greenlight.com/" className="ml-1">
                   Greenlight
-                </a>
+                </Link>
                 .
               </Muted>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Button size="lg" asChild>
-                  <a href="mailto:jonathanchuang.dev@gmail.com">Get in touch</a>
+                  <Link
+                    href="mailto:jonathanchuang.dev@gmail.com"
+                    variant="button"
+                  >
+                    Get in touch
+                  </Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="#services">Browse services</a>
+                  <Link href="#services" variant="button">
+                    Browse services
+                  </Link>
                 </Button>
               </div>
               <div className="flex items-center gap-4 pt-2">
@@ -129,25 +127,20 @@ export default function Home() {
                 <P color="muted">
                   I'm driven by building software that makes people's lives
                   better. Outside of work you can find me on a basketball or
-                  tennis court, listening to{' '}
-                  <a href="/spotify" className="underline underline-offset-4">
-                    music
-                  </a>
-                  , or trying new recipes. I aspire to be as good of a chef as
-                  my mom one day.
+                  tennis court, listening to <Link href="/spotify">music</Link>,
+                  or trying new recipes. I aspire to be as good of a chef as my
+                  mom one day.
                 </P>
                 <div className="flex gap-3">
                   <Button variant="secondary" asChild>
-                    <a
-                      href="https://jonathanchuang.me/Resume.pdf"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <Link href="/Resume.pdf" variant="button" external>
                       View resume
-                    </a>
+                    </Link>
                   </Button>
                   <Button variant="outline" asChild>
-                    <a href="#contact">Contact</a>
+                    <Link href="#contact" variant="button">
+                      Contact
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -274,13 +267,12 @@ export default function Home() {
                   workflow.
                 </div>
                 <Button asChild>
-                  <a
+                  <Link
                     href="https://chrome.google.com/webstore/detail/quicklinks/pmmebpkgkcjmdacahjaomedifklninbp?utm_source=site"
-                    target="_blank"
-                    rel="noreferrer"
+                    variant="button"
                   >
                     View on Chrome Web Store
-                  </a>
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -298,25 +290,28 @@ export default function Home() {
                 </div>
                 <div className="flex flex-wrap gap-3">
                   <Button size="lg" asChild>
-                    <a href="mailto:jonathanchuang.dev@gmail.com">Email me</a>
+                    <Link
+                      href="mailto:jonathanchuang.dev@gmail.com"
+                      variant="button"
+                    >
+                      Email me
+                    </Link>
                   </Button>
                   <Button variant="outline" size="lg" asChild>
-                    <a
+                    <Link
                       href="https://www.linkedin.com/in/j0nathanchuang/"
-                      target="_blank"
-                      rel="noreferrer"
+                      variant="button"
                     >
                       LinkedIn
-                    </a>
+                    </Link>
                   </Button>
                   <Button variant="secondary" size="lg" asChild>
-                    <a
+                    <Link
                       href="https://github.com/j0nathanchuang"
-                      target="_blank"
-                      rel="noreferrer"
+                      variant="button"
                     >
                       GitHub
-                    </a>
+                    </Link>
                   </Button>
                 </div>
               </div>
