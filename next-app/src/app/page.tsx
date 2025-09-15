@@ -11,6 +11,15 @@ import {
 } from '@/components/ui/card';
 import { TypeWriter } from '@/components/ui/typewriter';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import {
+  MapPin,
+  GraduationCap,
+  BriefcaseBusiness,
+  Code,
+  Bot,
+  Languages,
+  Medal,
+} from 'lucide-react';
 
 export default function Home() {
   return (
@@ -20,7 +29,8 @@ export default function Home() {
           {/* Hero */}
           <section className="grid grid-cols-1 lg:grid-cols-[6.5fr_3.5fr] gap-10 items-center mb-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center rounded-full border bg-muted/50 px-3 py-1 text-xs text-muted-foreground">
+              <div className="inline-flex gap-1 items-center rounded-full border bg-muted/50 px-3 py-1 text-xs text-muted-foreground">
+                <BriefcaseBusiness size={12} />
                 Full‑stack Software Engineer at Greenlight
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-primary">
@@ -61,8 +71,15 @@ export default function Home() {
                   <a href="#services">Browse services</a>
                 </Button>
               </div>
-              <div className="text-xs text-muted-foreground pt-2">
-                University of Michigan B.S. 2022 • Based in Chicago
+              <div className="flex items-center gap-4 text-xs text-muted-foreground pt-2">
+                <div className="flex items-center gap-1">
+                  <GraduationCap size={14} />
+                  <span>University of Michigan B.S. 2022</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <MapPin size={14} />
+                  <span>Based in Chicago</span>
+                </div>
               </div>
             </div>
             <div className="relative mx-auto w-full max-w-xl">
@@ -194,38 +211,40 @@ export default function Home() {
 
           {/* Skills */}
           <section className="mb-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-              <div className="space-y-4">
-                <h2 className="text-3xl font-semibold text-primary">Skills</h2>
-                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                  <li className="rounded-md border bg-muted/40 p-4">
+            <div className="space-y-6">
+              <h2 className="text-3xl font-semibold text-primary">Skills</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="group flex items-center gap-3 p-4 rounded-lg border border-border/50">
+                  <div className="p-2 rounded-md bg-primary/10">
+                    <Code size={18} className="text-primary" />
+                  </div>
+                  <span className="font-medium">
                     TypeScript, React, Next.js, SQL, Python
-                  </li>
-                  <li className="rounded-md border bg-muted/40 p-4">
-                    LLMs, Cursor, Devin, Dia
-                  </li>
-                  <li className="rounded-md border bg-muted/40 p-4">
+                  </span>
+                </div>
+                <div className="group flex items-center gap-3 p-4 rounded-lg border border-border/50">
+                  <div className="p-2 rounded-md bg-primary/10">
+                    <Bot size={18} className="text-primary" />
+                  </div>
+                  <span className="font-medium">LLMs, Cursor, Devin, Dia</span>
+                </div>
+                <div className="group flex items-center gap-3 p-4 rounded-lg border border-border/50">
+                  <div className="p-2 rounded-md bg-primary/10">
+                    <Languages size={18} className="text-primary" />
+                  </div>
+                  <span className="font-medium">
                     English, Mandarin, Spanish
-                  </li>
-                  <li className="rounded-md border bg-muted/40 p-4">
+                  </span>
+                </div>
+                <div className="group flex items-center gap-3 p-4 rounded-lg border border-border/50">
+                  <div className="p-2 rounded-md bg-primary/10">
+                    <Medal size={18} className="text-primary" />
+                  </div>
+                  <span className="font-medium">
                     3-pt Specialist, Can dunk on 9'5"
-                  </li>
-                </ul>
+                  </span>
+                </div>
               </div>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                <li className="rounded-md border bg-muted/40 p-4">
-                  TypeScript, React, Next.js, SQL, Python
-                </li>
-                <li className="rounded-md border bg-muted/40 p-4">
-                  AWS, Railway, Stigg, Stripe, WorkOS
-                </li>
-                <li className="rounded-md border bg-muted/40 p-4">
-                  LLMs, Cursor, Postman, Devin
-                </li>
-                <li className="rounded-md border bg-muted/40 p-4">
-                  English, Mandarin, Spanish
-                </li>
-              </ul>
             </div>
           </section>
 
