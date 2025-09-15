@@ -10,15 +10,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { TypeWriter } from '@/components/ui/typewriter';
-import {
-  H1,
-  H2,
-  H3,
-  P,
-  Small,
-  Muted,
-  XSmall,
-} from '@/components/ui/typography';
+import { H1, H2, P, Small, Muted, XSmall } from '@/components/ui/typography';
 import { Link } from '@/components/ui/link';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import {
@@ -29,6 +21,10 @@ import {
   Bot,
   Languages,
   Medal,
+  Mail,
+  Linkedin,
+  Github,
+  Instagram,
 } from 'lucide-react';
 
 export default function Home() {
@@ -280,39 +276,69 @@ export default function Home() {
 
           {/* Contact */}
           <section id="contact" className="mb-8">
-            <div className="rounded-xl border bg-muted/40 p-6 sm:p-8">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                <div>
-                  <H3>Let's build something great</H3>
-                  <P className="text-muted-foreground">
-                    Email is best. I read everything.
-                  </P>
+            <H2 color="primary" className="mb-2">
+              Contact
+            </H2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+              <div className="gap-4">
+                <div className="group flex items-center gap-3 p-3">
+                  <div className="p-2 rounded-md bg-primary/10">
+                    <Mail size={18} className="text-primary" />
+                  </div>
+                  <Link
+                    href="mailto:jonathanchuang.dev@gmail.com"
+                    variant="button"
+                    className="text-primary"
+                  >
+                    Email me
+                  </Link>
                 </div>
-                <div className="flex flex-wrap gap-3">
-                  <Button size="lg" asChild>
-                    <Link
-                      href="mailto:jonathanchuang.dev@gmail.com"
-                      variant="button"
-                    >
-                      Email me
-                    </Link>
-                  </Button>
-                  <Button variant="outline" size="lg" asChild>
-                    <Link
-                      href="https://www.linkedin.com/in/j0nathanchuang/"
-                      variant="button"
-                    >
-                      LinkedIn
-                    </Link>
-                  </Button>
-                  <Button variant="secondary" size="lg" asChild>
-                    <Link
-                      href="https://github.com/j0nathanchuang"
-                      variant="button"
-                    >
-                      GitHub
-                    </Link>
-                  </Button>
+                <div className="group flex items-center gap-3 p-3">
+                  <div className="p-2 rounded-md bg-primary/10">
+                    <Linkedin size={18} className="text-primary" />
+                  </div>
+                  <Link
+                    href="https://www.linkedin.com/in/j0nathanchuang"
+                    variant="button"
+                    className="text-primary"
+                  >
+                    Connect with me on LinkedIn
+                  </Link>
+                </div>
+                <div className="group flex items-center gap-3 p-3">
+                  <div className="p-2 rounded-md bg-primary/10">
+                    <Github size={18} className="text-primary" />
+                  </div>
+                  <Link
+                    href="https://github.com/j0nathanchuang"
+                    variant="button"
+                    className="text-primary"
+                  >
+                    View my projects on GitHub
+                  </Link>
+                </div>
+                <div className="group flex items-center gap-3 p-3">
+                  <div className="p-2 rounded-md bg-primary/10">
+                    <Instagram size={18} className="text-primary" />
+                  </div>
+                  <Link
+                    href="https://www.instagram.com/j0nathanchuang"
+                    variant="button"
+                    className="text-primary"
+                  >
+                    Follow me on Instagram
+                  </Link>
+                </div>
+              </div>
+              <div className="flex items-center justify-center md:justify-end">
+                <div className="w-64 h-64 flex items-center justify-center">
+                  <DotLottieReact
+                    src="/mail.lottie"
+                    loop
+                    autoplay
+                    speed={0.8}
+                    style={{ width: '100%', height: '100%' }}
+                  />
                 </div>
               </div>
             </div>
