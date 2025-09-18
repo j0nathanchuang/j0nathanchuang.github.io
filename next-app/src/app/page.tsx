@@ -126,7 +126,7 @@ export default function Home() {
                 </P>
                 <div className="flex gap-3">
                   <Button variant="secondary" asChild>
-                    <Link href="/Resume.pdf" variant="button" external>
+                    <Link href="/resume.pdf" variant="button" external>
                       View resume
                     </Link>
                   </Button>
