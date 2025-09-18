@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/card';
 import { Accordion } from '@/components/ui/accordion';
 import { TypeWriter } from '@/components/ui/typewriter';
-import { H1, H2, P, Small, Muted, XSmall } from '@/components/ui/typography';
+import { H1, H2, P, Muted, XSmall } from '@/components/ui/typography';
 import { Link } from '@/components/ui/link';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import {
@@ -27,7 +27,7 @@ import {
   Github,
   Instagram,
 } from 'lucide-react';
-import { ExperienceAccordionItem } from '@/components/shared';
+import { ExperienceAccordionItem, Footer } from '@/components/shared';
 
 export default function Home() {
   return (
@@ -426,17 +426,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="border-t bg-muted/50">
-        <div className="container mx-auto px-4 py-8 text-sm text-muted-foreground flex flex-col sm:flex-row items-center justify-between gap-3">
-          <Small>
-            © {new Date().getFullYear()} Jonathan Chuang. All rights reserved.
-          </Small>
-          <div className="flex items-center gap-3">
-            <Image src="/globe.svg" alt="Globe" width={16} height={16} />
-            <Small>Built with Next.js and shadcn/ui</Small>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
