@@ -9,6 +9,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { Accordion } from '@/components/ui/accordion';
 import { TypeWriter } from '@/components/ui/typewriter';
 import { H1, H2, P, Small, Muted, XSmall } from '@/components/ui/typography';
 import { Link } from '@/components/ui/link';
@@ -26,6 +27,7 @@ import {
   Github,
   Instagram,
 } from 'lucide-react';
+import { ExperienceAccordionItem } from '@/components/shared';
 
 export default function Home() {
   return (
@@ -115,9 +117,12 @@ export default function Home() {
                 <P color="muted">
                   I'm driven by building software that makes people's lives
                   better. Outside of work you can find me on a basketball or
-                  tennis court, listening to <Link href="/spotify">music</Link>,
-                  or trying new recipes. I aspire to be as good of a chef as my
-                  mom one day.
+                  tennis court, listening to{' '}
+                  <Link href="https://open.spotify.com/user/1240388369?si=61fa566040b8426b">
+                    music
+                  </Link>
+                  , or trying new recipes. I aspire to be as good of a chef as
+                  my mom one day.
                 </P>
                 <div className="flex gap-3">
                   <Button variant="secondary" asChild>
@@ -151,50 +156,133 @@ export default function Home() {
             <H2 color="primary" className="mb-6">
               Experience
             </H2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Magical</CardTitle>
-                  <CardDescription>
-                    Software Engineer • Aug 2022 – Jul 2025
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Led monetization, subscriptions, and enterprise features
-                    across the stack.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>Capital One</CardTitle>
-                  <CardDescription>
-                    Software Engineering Intern • Summer 2021
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Built internal tools in an agile environment; contributed to
-                    beta launch.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardHeader>
-                  <CardTitle>LeaseMagnets</CardTitle>
-                  <CardDescription>
-                    Software Engineering Intern • 2020–2021
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    Web development across marketing analytics and customer
-                    workflows.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
+            <Accordion type="single" collapsible className="w-full">
+              <ExperienceAccordionItem
+                value="greenlight"
+                companyName="Greenlight"
+                tagline="Software Engineer • Sep 2025 – Present"
+                website="https://greenlight.com"
+              >
+                <Link href="https://www.linkedin.com/company/greenlightcard/">
+                  Greenlight
+                </Link>{' '}
+                is a{' '}
+                <Link href="https://techcrunch.com/2021/04/27/kids-focused-fintech-greenlight-raises-260m-in-a16z-led-series-d-nearly-doubles-valuation-to-2-3b/">
+                  Series D
+                </Link>{' '}
+                fintech startup focused on empowering parents to raise
+                financially-smart kids, providing money and safety features for
+                families.
+                <br />
+                <br />
+                More to come about my role here soon!
+              </ExperienceAccordionItem>
+              <ExperienceAccordionItem
+                value="magical"
+                companyName="Magical"
+                tagline="Software Engineer • Aug 2022 – Jul 2025"
+                website="https://getmagical.com"
+              >
+                <Link href="https://www.linkedin.com/company/getmagical/">
+                  Magical
+                </Link>{' '}
+                is a{' '}
+                <Link href="https://techcrunch.com/2022/06/06/magical-nabs-35m-to-move-data-across-webpages-automatically/">
+                  Series A
+                </Link>{' '}
+                startup that is focused on automating mundane, repetitive
+                workflows. For example, imagine you are a recruiter and you want
+                to input all of your candidates' LinkedIn profiles into a
+                spreadsheet. You could manually do this for a few candidates,
+                but for hundreds of candidates, that would take a lot of time.
+                Instead, Magical can automate this process.
+                <br />
+                <br />
+                When I first joined, we only had a pre-revenue Chrome extension
+                product. I was fortunate enough to lead the monetization
+                implementation – going from 0 paying customers to $2M+ in ARR
+                today. In 2025, we shifted towards a new AI web application
+                product, where I helped create the UI for the AI agent creation
+                flow. At Magical, I got to wear many hats – from talking to
+                customers to building our internal design system to creating AI
+                agents. I'm so appreciative that this was my first full-time
+                role – I met so many great people and learned so much.
+                <br />
+                <br />
+                Download our Chrome Extension{' '}
+                <Link href="https://www.getmagical.com/">here</Link>
+              </ExperienceAccordionItem>
+              <ExperienceAccordionItem
+                value="capital-one"
+                companyName="Capital One"
+                tagline="Software Engineering Intern • May 2021 - Aug 2021"
+                website="https://capitalone.com"
+              >
+                After working at a startup, I really wanted to work at an
+                established tech company to experience the other end of the
+                spectrum. I definitely got that at Capital One. I worked in an
+                agile environment using a{' '}
+                <Link href="https://support.atlassian.com/jira-software-cloud/docs/what-is-a-jira-software-board/">
+                  Jira board
+                </Link>{' '}
+                for the two-week{' '}
+                <Link href="https://support.atlassian.com/jira-software-cloud/docs/what-is-a-sprint/">
+                  sprints
+                </Link>{' '}
+                along with daily{' '}
+                <Link href="https://www.atlassian.com/agile/scrum/standups">
+                  standups
+                </Link>{' '}
+                with our manager.
+                <br />
+                <br />
+                I worked in an intern pod with 3 other interns and got to and
+                work with the full-time employees every day. I even got to
+                experience a beta launch of the internal credit card policy
+                builder tool I was working on. Throughout my internship, I
+                received numerous swag bags, snack boxes, and GrubHub gift
+                cards. I also had the opportunity to interact with the CEO! Not
+                many internship experiences can say that.
+                <br />
+                <br />
+                Additionally, everyone that I ever talked to at Capital One felt
+                like a genuine, friendly person that I would enjoy working with
+                full-time.{' '}
+                <Link href="https://www.linkedin.com/company/capital-one/">
+                  Capital One
+                </Link>{' '}
+                truly puts its employees first and has mastered work-life
+                balance in the pandemic.
+              </ExperienceAccordionItem>
+              <ExperienceAccordionItem
+                value="leasemagnets"
+                companyName="LeaseMagnets"
+                tagline="Software Engineering Intern • Jun 2020 - Aug 2020 • Jan 2021 - May 2021"
+                website="https://leasemagnets.com"
+              >
+                After my original summer internship got canceled, I,
+                fortunately, found a new internship through{' '}
+                <Link href="https://annarborusa.org/">Ann Arbor SPARK</Link> and
+                was matched with a startup founded by 2 Michigan undergrads
+                called LeaseMagnets.{' '}
+                <Link href="https://www.linkedin.com/company/leasemagnets/">
+                  LeaseMagnets
+                </Link>{' '}
+                is a startup looking to reinvent digital marketing and virtual
+                leasing tools for apartments, specifically student housing,
+                multi-family housing, and senior living.
+                <br />
+                <br />
+                After enjoying the previous summer working at LeaseMagnets and
+                becoming extremely tired of{' '}
+                <Link href="https://www.theguardian.com/world/2020/oct/06/zoom-university-college-cost-students-in-person-experience">
+                  "Zoom university"
+                </Link>
+                , I returned to LeaseMagnets the winter 2021 semester to
+                continue my web development journey. This time around, I had a
+                lot more responsibilities and a broader range of projects.
+              </ExperienceAccordionItem>
+            </Accordion>
           </section>
 
           {/* Skills */}
