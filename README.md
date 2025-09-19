@@ -1,38 +1,36 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/48df7507-99bb-4b03-bda8-879f6e8f1dbf/deploy-status)](https://app.netlify.com/sites/jonathanchuang/deploys)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Website all about me!
+## Getting Started
 
-Read Only by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Just a super simple single-page responsive template built for personal sites and portfolios
-(although it'd definitely work for other stuff too). Includes a contact form, pre-styled
-elements, and Sass sources.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-(* = Not included)
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+## Learn More
 
-AJ
-aj@lkn.io | @ajlkn
+To learn more about Next.js, take a look at the following resources:
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Credits:
+## Deploy on Vercel
 
-	Demo Images:
-		Unsplash (unsplash.com)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
