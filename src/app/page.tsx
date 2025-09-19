@@ -50,8 +50,8 @@ export default function Home() {
                   Magical
                 </Link>
                 , I led monetization and enterprise features, helping grow from
-                a pre‑revenue Chrome extension to $2M+ ARR. Now I'm excited to
-                continue my professional journey at
+                a pre‑revenue Chrome extension to $2M+ ARR. Now I&apos;m excited
+                to continue my professional journey at
                 <Link href="https://www.greenlight.com/" className="ml-1">
                   Greenlight
                 </Link>
@@ -115,9 +115,9 @@ export default function Home() {
               <div className="space-y-4">
                 <H2 color="primary">About me</H2>
                 <P color="muted">
-                  I'm driven by building software that makes people's lives
-                  better. Outside of work you can find me on a basketball or
-                  tennis court, listening to{' '}
+                  I&apos;m driven by building software that makes people&apos;s
+                  lives better. Outside of work you can find me on a basketball
+                  or tennis court, listening to{' '}
                   <Link href="https://open.spotify.com/user/1240388369?si=61fa566040b8426b">
                     music
                   </Link>
@@ -192,7 +192,7 @@ export default function Home() {
                 </Link>{' '}
                 startup that is focused on automating mundane, repetitive
                 workflows. For example, imagine you are a recruiter and you want
-                to input all of your candidates' LinkedIn profiles into a
+                to input all of your candidates&apos; LinkedIn profiles into a
                 spreadsheet. You could manually do this for a few candidates,
                 but for hundreds of candidates, that would take a lot of time.
                 Instead, Magical can automate this process.
@@ -205,8 +205,8 @@ export default function Home() {
                 product, where I helped create the UI for the AI agent creation
                 flow. At Magical, I got to wear many hats – from talking to
                 customers to building our internal design system to creating AI
-                agents. I'm so appreciative that this was my first full-time
-                role – I met so many great people and learned so much.
+                agents. I&apos;m so appreciative that this was my first
+                full-time role – I met so many great people and learned so much.
                 <br />
                 <br />
                 Download our Chrome Extension{' '}
@@ -276,7 +276,7 @@ export default function Home() {
                 After enjoying the previous summer working at LeaseMagnets and
                 becoming extremely tired of{' '}
                 <Link href="https://www.theguardian.com/world/2020/oct/06/zoom-university-college-cost-students-in-person-experience">
-                  "Zoom university"
+                  &ldquo;Zoom university&rdquo;
                 </Link>
                 , I returned to LeaseMagnets the winter 2021 semester to
                 continue my web development journey. This time around, I had a
@@ -317,7 +317,7 @@ export default function Home() {
                     <Medal size={18} className="text-primary" />
                   </div>
                   <span className="font-medium">
-                    3-pt Specialist, Can dunk on 9'5"
+                    3-pt Specialist, Can dunk on 9&apos;5&rdquo;
                   </span>
                 </div>
               </div>

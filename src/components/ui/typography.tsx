@@ -82,7 +82,7 @@ const Typography = React.forwardRef<HTMLElement, TypographyProps>(
 
     const Element = as || getDefaultElement(variant || 'p');
 
-    return React.createElement(Element as any, {
+    return React.createElement(Element as React.ElementType, {
       className: cn(typographyVariants({ variant, color, className })),
       ref,
       ...props,

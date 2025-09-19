@@ -51,7 +51,7 @@ const CustomLink = React.forwardRef<HTMLAnchorElement, LinkProps>(
       size,
       href,
       external = false,
-      asChild = false,
+      asChild = false, // eslint-disable-line @typescript-eslint/no-unused-vars
       children,
       onClick,
       ...props

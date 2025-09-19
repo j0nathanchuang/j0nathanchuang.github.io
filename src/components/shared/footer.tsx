@@ -1,6 +1,5 @@
-import { Small, XSmall } from '@/components/ui/typography';
+import { XSmall } from '@/components/ui/typography';
 import { Link } from '@/components/ui/link';
-import Image from 'next/image';
 import {
   Mail,
   Linkedin,
