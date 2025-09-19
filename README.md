@@ -1,38 +1,27 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/48df7507-99bb-4b03-bda8-879f6e8f1dbf/deploy-status)](https://app.netlify.com/sites/jonathanchuang/deploys)
 
-Website all about me!
+**Primary:** https://jonathanchuang.me/
 
-Read Only by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+**Secondary**: https://j0nathanchuang.github.io/
 
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Just a super simple single-page responsive template built for personal sites and portfolios
-(although it'd definitely work for other stuff too). Includes a contact form, pre-styled
-elements, and Sass sources.
+## Getting Started
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+First, run the development server:
 
-(* = Not included)
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-AJ
-aj@lkn.io | @ajlkn
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
-
-
-Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
-
-	Icons:
-		Font Awesome (fontawesome.io)
-
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
