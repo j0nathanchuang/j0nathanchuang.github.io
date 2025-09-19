@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="border-t border-primary/10 bg-secondary/10">
       <div className="container mx-auto p-12">
         {/* Social Links */}
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-4">
           <div className="flex items-center gap-6">
             <Link
               href="mailto:jonathanchuang.dev@gmail.com"
@@ -54,11 +54,13 @@ export default function Footer() {
             </Link>
           </div>
 
-          <div className="flex items-center gap-2 text-muted-foreground">
+          <div className="flex items-center text-muted-foreground">
             <XSmall>
               © {new Date().getFullYear()} Jonathan Chuang. All rights reserved.
-              Made with
             </XSmall>
+          </div>
+          <div className="flex items-center gap-0.5 text-muted-foreground">
+            <XSmall>Made with</XSmall>
             <Heart size={14} className="text-red-500 fill-current" />
             <XSmall>.</XSmall>
           </div>
