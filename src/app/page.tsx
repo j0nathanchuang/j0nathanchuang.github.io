@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <main>
-        <div className="w-full px-16 lg:px-24 pt-12 bg-gradient-to-b from-secondary/60 to-background dark:from-secondary/50 dark:to-background">
+        <div className="w-full px-8 lg:px-24 pt-12 bg-gradient-to-b from-secondary/60 to-background dark:from-secondary/50 dark:to-background">
           {/* Hero */}
           <section className="grid grid-cols-1 lg:grid-cols-[6.5fr_3.5fr] gap-10 items-center mb-8">
             <div className="space-y-6">
@@ -108,7 +108,7 @@ export default function Home() {
           </section>
         </div>
 
-        <div className="container mx-auto px-16 lg:px-48 pt-8 pb-12">
+        <div className="container mx-auto px-8 lg:px-48 pt-8 pb-12">
           {/* About */}
           <section className="mb-20">
             <div className="grid grid-cols-1 md:grid-cols-[6fr_4fr] gap-10 items-start">
