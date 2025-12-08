@@ -1,3 +1,4 @@
+// View sitemap via `/sitemap.xml`
 import { MetadataRoute } from 'next';
 
 // Force static generation for sitemap when using output: export
