@@ -1,7 +1,7 @@
+import { Footer, StructuredData } from '@/components/shared';
 import type { Metadata } from 'next';
 import { Figtree } from 'next/font/google';
 import './globals.css';
-import { StructuredData } from '@/components/shared';
 
 const figtree = Figtree({
   variable: '--font-figtree',
@@ -105,6 +105,7 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-background font-sans antialiased">
         {children}
+        <Footer />
       </body>
     </html>
   );
