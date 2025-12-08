@@ -43,7 +43,7 @@ export default function Home() {
                 delay={200}
               />
             </H1>
-            <Muted className="text-lg max-w-3xl">
+            <Muted className="text-lg lg:max-w-3xl">
               I help startups build, ship, and scale. Previously at
               <Link href="https://www.getmagical.com/" className="ml-1">
                 Magical
@@ -78,7 +78,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="relative mx-auto w-full max-w-xl">
+          <div className="relative mx-auto w-full max-w-xl hidden lg:block">
             <div className="aspect-[4/3] rounded-2xl flex items-center justify-center">
               <DotLottieReact
                 src="/programmer.lottie"
@@ -136,14 +136,14 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="flex items-center justify-center">
-              <div className="w-48 h-48 flex items-center justify-center">
+            <div className="w-full hidden md:block">
+              <div className="flex items-center justify-center">
                 <DotLottieReact
                   src="/basketball.lottie"
                   loop
                   autoplay
                   speed={0.7}
-                  style={{ width: '100%', height: '100%' }}
+                  className="w-48 h-48"
                 />
               </div>
             </div>
@@ -355,7 +355,7 @@ export default function Home() {
           <H2 color="primary" className="mb-2">
             Contact
           </H2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-start">
             <div className="gap-4">
               <div className="group flex items-center gap-3 p-3">
                 <div className="p-2 rounded-md bg-primary/10">
